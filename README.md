@@ -8,7 +8,7 @@ I always wanted to write my own version of Minesweeper, and doing it as a Desk A
 This project was almost completely (99.9%) developed under MACE without using other emulators or real hardware:
 - Using THINK Pascal 4.0.1 to write, debug the code and build final DA
 - ResEdit 2.1.3 to create all resources and draw the graphics. All graphics were hand-drawn using 100% ResEdit 2.1.3 to mimic the original Windows 3.x minesweeper as closely as possible, with some "mac-like" modifications to them :)
-- Only external tools used were Compact Pro & Dropbin running in Basilisk2 (as I didn't have time to figure out why CompactPro fails to create new archives under MACE, instead failing on resource loading error)
+- Only external tools used were Compact Pro & Dropbin running in Basilisk2 to package the final, compiled game (as I didn't have time to figure out why CompactPro fails to create new archives under MACE, instead failing on resource loading error)
 
 After compiling, this desk accessory was tested briefly running System 7.x in other emulators, and MacOS 9.x on real hardware.
 
