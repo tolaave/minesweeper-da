@@ -1,6 +1,8 @@
 # Minesweeper DA
 This is a quick fun project I quickly hacked up for #MARCHintosh 2025, a minesweeper clone implemented as Desk Accessory (DA) for older 68K Macs.
 
+![minesweeper](https://github.com/user-attachments/assets/130b25fb-be0b-4bac-9d47-c7ac9e3a307d)
+
 I always wanted to write my own version of Minesweeper, and doing it as a Desk Accessory felt like a fun way to do it, given how simple the game is (akin to the "Puzzle" game Apple bundled with older Mac system versions).
 
 This project was almost completely (99.9%) developed under MACE without using other emulators or real hardware:
