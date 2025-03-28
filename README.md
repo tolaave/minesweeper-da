@@ -16,7 +16,7 @@ Some notes on the graphics:
 - The 'cicn's have b&w versions (same as in 'SICN's) of tiles, so that they'll get automatically selected by QuickDraw depending on the target device (monochrome versions are used for 1- and 2-bit devices)
 - Colors in the 'cicn' resources are selected so that they should look nice also in 16-color modes (as QuickDraw converts the 8-bit colors into the 4-bit palette during drawing)
 - When handling Update events, DeviceLoop is used to determine color depth of drawing target devices to select proper background pattern & color combination for each device
-- To make the game fully playable on older Macs, the minefield maximum size is capped by the 512x342 "classic", which has space for 30x16 tiles of 16x16 size in a window that covers almost the full screen (plus the status area at top). Interestingly, this is the same size as Windows 3.x minesweepers expert playfield, which seems to be quite interesting coincidence...
+- To make the game fully playable on older Macs, the minefield maximum size is capped by the 512x342 "classic" screen size, which has space for 30x16 tiles of 16x16 size in a window that covers almost the full screen (plus the status area at top). Interestingly, this is the same size as Windows 3.x minesweepers expert playfield, which seems to be quite interesting coincidence...
 
 After compiling, this desk accessory was tested briefly running System 7.x in other emulators, and MacOS 9.x on real hardware.
 
