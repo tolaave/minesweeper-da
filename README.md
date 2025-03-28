@@ -10,6 +10,13 @@ This project was almost completely (99.9%) developed under MACE without using ot
 - ResEdit 2.1.3 to create all resources and draw the graphics. All graphics were hand-drawn using 100% ResEdit 2.1.3 to mimic the original Windows 3.x minesweeper as closely as possible, with some "mac-like" modifications to them :)
 - Only external tools used were Compact Pro & Dropbin running in Basilisk2 to package the final, compiled game (as I didn't have time to figure out why CompactPro fails to create new archives under MACE, instead failing on resource loading error)
 
+Some notes on the graphics:
+- The DA should support multi-monitor setups with any color depths, even if crossing window between monitors (not tested though!)
+- Tile graphics are implemented as 'cicn's drawn through PlotCIcon on color quickdraw systems, and as 'SICN's loaded into BitMaps drawn through CopyBits on b&w systems
+- The 'cicn's have b&w versions (same as in 'SICN's) of tiles, so that they'll get automatically selected by QuickDraw depending on the target device (monochrome versions are used for 1- and 2-bit devices)
+- Colors in the 'cicn' resources are selected so that they should look nice also in 16-color modes (as QuickDraw converts the 8-bit colors into the 4-bit palette during drawing)
+- When handling Update events, DeviceLoop is used to determine color depth of drawing target devices to select proper background pattern & color combination for each device
+
 After compiling, this desk accessory was tested briefly running System 7.x in other emulators, and MacOS 9.x on real hardware.
 
 Although game code is original, there's a couple bits of sample code from the THINK Pascal Demo application samples:
